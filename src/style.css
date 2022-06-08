@@ -67,7 +67,6 @@ header {
             0 0 0.8rem #7d3aef,
             0 0 2.8rem #7d3aef,
             inset 0 0 1.3rem #7d3aef; 
-  transition: all 0.1s ease-in-out;
   color: #fe8859;
   text-shadow:
   0 0 10px #fe8859,
@@ -80,7 +79,7 @@ header {
   0 0 251px #f66128;
 }
 
-.nav-button:hover{
+.nav-button.hovered{
   cursor: pointer;
   box-shadow: 0 0 .4rem #fff,
   0 0 .4rem #fff,
@@ -168,6 +167,8 @@ h1 {
   0 0 92px #f66128,
   0 0 102px #f66128,
   0 0 151px #f66128;
+
+  margin-bottom: 50px;
 }
 
 .tickets {
@@ -176,13 +177,26 @@ h1 {
   text-align: center;
   width: 200px;
   padding: 15px 30px;
-  border: 0.1rem solid rgb(205, 151, 173, 0.5);
+  
+  border: 0rem solid rgb(205, 151, 173, 0.5);
   border-radius: 0.5rem;
   padding: 0.4em;
-  transition: all 0.1s ease-in-out;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-shadow:
+  0 0 2px #fff,
+  0 0 5px #fff,
+  0 0 9px #fff,
+
+  0 0 75px #fff;
+
+
+
+}
+.tickets.hovered {
+  cursor: pointer;
+  text-shadow:
+
   0 0 4px #fff,
   0 0 11px #fff,
   0 0 19px #fff,
