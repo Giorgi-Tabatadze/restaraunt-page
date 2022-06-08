@@ -1,0 +1,194 @@
+@import "~normalize.css/normalize.css";
+
+@font-face {
+  font-family: 'NeonFont';
+  src: url('./neon.regular-webfont.woff2') format('woff2'),
+       url('./neon.regular-webfont.woff') format('woff');
+       font-weight: 600;
+       font-style: normal;
+}
+
+
+body {
+  font-family: "NeonFont", Arial, Helvetica, sans-serif;
+  height: 120vh;
+  background: url("./cyberpunk.jpg");
+  background-size: cover;
+}
+
+#content{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 20fr 1fr;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(3, 2, 2, 0.4);
+}
+
+#welcome {
+  margin-top: 50px;
+  width: 75%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding-bottom: 20px;
+  background-color: rgb(3, 2, 2, 0.4);
+}
+
+.header-nav{
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-button{
+
+  font-size: 25px;
+  background-color: transparent;
+  text-align: center;
+  width: 200px;
+  padding: 15px 30px;
+  border: 0.1rem solid #cd97ad;
+  border-radius: 0.5rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #7d3aef,
+            0 0 0.8rem #7d3aef,
+            0 0 2.8rem #7d3aef,
+            inset 0 0 1.3rem #7d3aef; 
+  transition: all 0.1s ease-in-out;
+  color: #fe8859;
+  text-shadow:
+  0 0 10px #fe8859,
+  0 0 15px #fe8859,
+  0 0 41px #fe8859,
+  0 0 82px #f66128,
+  0 0 122px #f66128,
+  0 0 162px #f66128,
+  0 0 202px #f66128,
+  0 0 251px #f66128;
+}
+
+.nav-button:hover{
+  cursor: pointer;
+  box-shadow: 0 0 .4rem #fff,
+  0 0 .4rem #fff,
+  0 0 4rem #7d3aef,
+  0 0 1.6rem #7d3aef,
+  0 0 5.6rem #7d3aef,
+  inset 0 0 2.6rem #7d3aef; 
+
+  text-shadow:
+  0 0 7px #fe8859,
+  0 0 10px #fe8859,
+  0 0 21px #fe8859,
+  0 0 42px #f66128,
+  0 0 82px #f66128,
+  0 0 92px #f66128,
+  0 0 102px #f66128,
+  0 0 151px #f66128;
+}
+
+.bar{
+  
+}
+
+.neonText {
+  color: #e8c7f6;
+  text-shadow:
+  0 0 4px #e1a1fa,
+  0 0 11px #e1a1fa,
+  0 0 19px #e1a1fa,
+  0 0 40px #bc13fe,
+  0 0 80px #bc13fe,
+  0 0 90px #bc13fe,
+  0 0 100px #bc13fe,
+  0 0 150px #bc13fe;
+}
+  
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "NeonFont";
+  text-align: center;
+  font-weight: 100;
+}
+  
+h1 {
+  font-size: 75px;
+  border-radius: 2rem;
+  margin-top: 100px;
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px #bc13fe,
+  0 0 80px #bc13fe,
+  0 0 90px #bc13fe,
+  0 0 100px #bc13fe,
+  0 0 150px #bc13fe;
+
+}
+
+#welcome p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px #fff,
+  0 0 80px #fff,
+  0 0 90px #fff,
+  0 0 100px #fff,
+  0 0 150px #fff;
+}
+
+#welcome h2{
+  font-size: 40px;
+  color: #fe8859;
+  text-shadow:
+  0 0 7px #fe8859,
+  0 0 10px #fe8859,
+  0 0 21px #fe8859,
+  0 0 42px #f66128,
+  0 0 82px #f66128,
+  0 0 92px #f66128,
+  0 0 102px #f66128,
+  0 0 151px #f66128;
+}
+
+.tickets {
+  font-size: 25px;
+  background-color: transparent;
+  text-align: center;
+  width: 200px;
+  padding: 15px 30px;
+  border: 0.1rem solid rgb(205, 151, 173, 0.5);
+  border-radius: 0.5rem;
+  padding: 0.4em;
+  transition: all 0.1s ease-in-out;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px #fff,
+  0 0 80px #fff,
+  0 0 90px #fff,
+  0 0 100px #fff,
+  0 0 150px #fff;
+}
