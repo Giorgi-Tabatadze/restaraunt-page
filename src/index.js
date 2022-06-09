@@ -3,7 +3,7 @@ import loadHome from "./home";
 import addHoverAnimation from "./hovered";
 
 
-const startPage = () => {
+const startPage = (() => {
 
   //declare content Div
   const body = document.querySelector("body");
@@ -62,6 +62,20 @@ const startPage = () => {
   const welcome = loadHome();
   
   main.appendChild (welcome);
-}
 
-startPage();
+  //footer
+
+  const footer = document.createElement("footer");
+  footer.classList.add("header-footer", "footer");
+  contentDiv.appendChild(footer);
+
+  const footerUl = document.createElement("ul");
+  footerUl.classList.add("footer-ul");
+  footer.appendChild(footerUl);
+
+  const madeInfoLi = document.createElement("li");
+  madeInfoLi.classList.add("footer-li");
+  footerUl.appendChild(madeInfoLi);
+  madeInfoLi.innerText = "Made by Giorgi Tabatadze for Odin project"
+})();
+

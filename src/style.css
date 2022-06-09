@@ -14,38 +14,38 @@ body {
   height: 120vh;
   background: url("./cyberpunk.jpg");
   background-size: cover;
+  
 }
 
 #content{
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 20fr 1fr;
+  background-color: rgb(3, 2, 2, 0.4);
+
 }
 
 main{
   display: flex;
   justify-content: center;
-  background-color: rgb(3, 2, 2, 0.4);
 }
 
 #welcome {
-  margin-top: 50px;
   width: 75%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 header {
   padding-bottom: 20px;
-  background-color: rgb(3, 2, 2, 0.4);
 }
 
 .header-nav{
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 20px;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
@@ -65,14 +65,13 @@ header {
             0 0 .2rem #fff,
             0 0 2rem #7d3aef,
             0 0 0.8rem #7d3aef,
-            0 0 2.8rem #7d3aef,
+     
             inset 0 0 1.3rem #7d3aef; 
   color: #fe8859;
   text-shadow:
   0 0 10px #fe8859,
   0 0 15px #fe8859,
-  0 0 41px #fe8859,
-  0 0 82px #f66128,
+
   0 0 122px #f66128,
   0 0 162px #f66128,
   0 0 202px #f66128,
@@ -85,14 +84,13 @@ header {
   0 0 .4rem #fff,
   0 0 4rem #7d3aef,
   0 0 1.6rem #7d3aef,
-  0 0 5.6rem #7d3aef,
+ 
   inset 0 0 2.6rem #7d3aef; 
 
   text-shadow:
   0 0 7px #fe8859,
   0 0 10px #fe8859,
-  0 0 21px #fe8859,
-  0 0 42px #f66128,
+
   0 0 82px #f66128,
   0 0 92px #f66128,
   0 0 102px #f66128,
@@ -128,7 +126,6 @@ h1, h2 {
 h1 {
   font-size: 75px;
   border-radius: 2rem;
-  margin-top: 100px;
   text-shadow:
   0 0 4px #fff,
   0 0 11px #fff,
@@ -205,4 +202,13 @@ h1 {
   0 0 90px #fff,
   0 0 100px #fff,
   0 0 150px #fff;
+}
+
+.footer-ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
 }
