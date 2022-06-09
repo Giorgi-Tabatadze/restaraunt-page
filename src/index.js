@@ -2,6 +2,7 @@ import "./style.css"
 import removeAllChildNodes from "./removenodes";
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 import addHoverAnimation from "./hovered";
 
 
@@ -17,6 +18,12 @@ const startPage = (() => {
   const clickMenuBtn = () =>{
     removeAllChildNodes(main);
     const divToLoad = loadMenu();
+    main.appendChild(divToLoad);
+  }
+
+  const clickContactBtn = () =>{
+    removeAllChildNodes(main);
+    const divToLoad = loadContact();
     main.appendChild(divToLoad);
   }
 
@@ -64,6 +71,7 @@ const startPage = (() => {
   addHoverAnimation(contactBtn);
   homeBtn.addEventListener("click", clickHomeBtn)
   menuBtn.addEventListener("click", clickMenuBtn)
+  contactBtn.addEventListener("click", clickContactBtn)
 
 
 

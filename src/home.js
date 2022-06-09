@@ -14,7 +14,7 @@ const loadHome = () => {
   welcomeDiv.appendChild(h2);
 
   const p1 = document.createElement("p");
-  p1.innerText = "FLY DOWN TO THE BEST CLUB IN THE IMPERIUM"
+  p1.innerText = "FLY DOWN TO THE BEST CLUB IN THE NIGHT CITY"
   welcomeDiv.appendChild(p1);
 
   const p2 = document.createElement("p");
