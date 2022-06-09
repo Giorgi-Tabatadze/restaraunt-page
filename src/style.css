@@ -31,6 +31,7 @@ main{
 }
 
 #welcome {
+  padding-bottom: 100px;
   width: 75%;
   border-radius: 20px;
   display: flex;
@@ -97,11 +98,9 @@ header {
   0 0 151px #f66128;
 }
 
-.bar{
-  
-}
-
 .neonText {
+  font-size: 75px;
+  border-radius: 2rem;
   color: #e8c7f6;
   text-shadow:
   0 0 4px #e1a1fa,
@@ -115,7 +114,7 @@ header {
 }
   
 
-h1, h2 {
+#welcome h1, #welcome h2 {
   margin: 0;
   padding: 0;
   font-family: "NeonFont";
@@ -123,20 +122,6 @@ h1, h2 {
   font-weight: 100;
 }
   
-h1 {
-  font-size: 75px;
-  border-radius: 2rem;
-  text-shadow:
-  0 0 4px #fff,
-  0 0 11px #fff,
-  0 0 19px #fff,
-  0 0 40px #bc13fe,
-  0 0 80px #bc13fe,
-  0 0 90px #bc13fe,
-  0 0 100px #bc13fe,
-  0 0 150px #bc13fe;
-
-}
 
 #welcome p{
   color: white;
@@ -164,7 +149,6 @@ h1 {
   0 0 92px #f66128,
   0 0 102px #f66128,
   0 0 151px #f66128;
-
   margin-bottom: 50px;
 }
 
@@ -211,4 +195,55 @@ h1 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
+}
+
+#menu {
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 75%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu h2{
+  margin: 0;
+  font-size: 40px;
+}
+
+
+.cocktail{
+  margin: 0;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+  gap: 100px;
+}
+
+.drink-name {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+.small-text{
+  font-weight: 200;
+  font-size: 10px;
+  margin: 0;
+}
+.cocktail>p {
+  font-size: 25px;
+  font-weight: 200;
+  text-align: end;
+  margin: 0;
 }

@@ -1,9 +1,24 @@
 import "./style.css"
+import removeAllChildNodes from "./removenodes";
 import loadHome from "./home";
+import loadMenu from "./menu";
 import addHoverAnimation from "./hovered";
 
 
+
 const startPage = (() => {
+
+  const clickHomeBtn = () =>{
+    removeAllChildNodes(main);
+    const divToLoad = loadHome();
+    main.appendChild(divToLoad);
+  }
+
+  const clickMenuBtn = () =>{
+    removeAllChildNodes(main);
+    const divToLoad = loadMenu();
+    main.appendChild(divToLoad);
+  }
 
   //declare content Div
   const body = document.querySelector("body");
@@ -47,6 +62,10 @@ const startPage = (() => {
   addHoverAnimation(homeBtn);
   addHoverAnimation(menuBtn);
   addHoverAnimation(contactBtn);
+  homeBtn.addEventListener("click", clickHomeBtn)
+  menuBtn.addEventListener("click", clickMenuBtn)
+
+
 
   homeLi.appendChild(homeBtn);
   menuLi.appendChild(menuBtn);
